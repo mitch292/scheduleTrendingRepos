@@ -1,0 +1,18 @@
+name = "schedule-trending-repos"
+type = "javascript"
+zone_id = ""
+account_id = "ee01a6e3c650e3805cf6dd1834e94954"
+route = ""
+workers_dev = true
+compatibility_date = "2021-10-17"
+
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"
+
+[triggers]
+crons = ["0 * * * *"]
+
+[env.dev.triggers]
+crons = ["0 * * * *"]
