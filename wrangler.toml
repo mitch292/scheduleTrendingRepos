@@ -13,6 +13,3 @@ format = "service-worker"
 
 [triggers]
 crons = ["0 0 * * *"]
-
-[env.dev.triggers]
-crons = ["0 0 * * *"]
