@@ -5,6 +5,7 @@ account_id = "ee01a6e3c650e3805cf6dd1834e94954"
 route = ""
 workers_dev = true
 compatibility_date = "2021-10-17"
+kv_namespaces = [{ binding = "TRENDING_REPOS_FETCH", id = "8373ac51236c4025b287b8c270a37355" }]
 
 [build]
 command = "npm install && npm run build"
@@ -13,7 +14,3 @@ format = "service-worker"
 
 [triggers]
 crons = ["0 9,12,15,18 * * *"]
-
-kv_namespaces = [ 
-         { binding = "TRENDING_REPOS_FETCH", id = "8373ac51236c4025b287b8c270a37355" }
-]
